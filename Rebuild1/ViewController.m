@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CorePlot.h"
+
 
 @interface ViewController ()
 
