@@ -7,9 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface ViewController : UIViewController
+{
+    AppDelegate *delegate;
+    NSTimer *sessionTimer;
+    int secondsCount;
+}
 
+@property (weak,nonatomic) IBOutlet UIButton *calibrateZero;
+@property (weak,nonatomic) IBOutlet UILabel *rollLabel;
+@property (weak,nonatomic) IBOutlet UILabel *pitchLabel;
+@property (weak,nonatomic) IBOutlet UILabel *targetRoll;
+@property (weak,nonatomic) IBOutlet UILabel *targetPitch;
+
+@property (weak,nonatomic) IBOutlet UILabel *statusLabel;
+
+@property (nonatomic, strong) NSTimer *myTimer;
 
 @end
 

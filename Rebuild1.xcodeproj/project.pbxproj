@@ -508,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ASU.Rebuild1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -521,6 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ASU.Rebuild1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -593,6 +595,7 @@
 				3D4A66931F467A95005EAA1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D4A66941F467A95005EAA1C /* Build configuration list for PBXNativeTarget "Rebuild1Tests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +604,7 @@
 				3D4A66961F467A95005EAA1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D4A66971F467A95005EAA1C /* Build configuration list for PBXNativeTarget "Rebuild1UITests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +613,7 @@
 				3D4A66991F467A95005EAA1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
