@@ -107,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="308.7890625" y="744.53125"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Available Tools-->
         <scene sceneID="VCY-Xs-Pxk">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="ZS7-4A-Fh6" sceneMemberID="viewController">
@@ -130,7 +130,7 @@
                             <outlet property="delegate" destination="ZS7-4A-Fh6" id="axB-Rw-sLT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="haq-GQ-Epc"/>
+                    <navigationItem key="navigationItem" title="Available Tools" id="haq-GQ-Epc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afO-x7-PsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

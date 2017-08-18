@@ -16,6 +16,7 @@
 		3D4A66771F467A95005EAA1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A66751F467A95005EAA1C /* LaunchScreen.storyboard */; };
 		3D4A66821F467A95005EAA1C /* Rebuild1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A66811F467A95005EAA1C /* Rebuild1Tests.m */; };
 		3D4A668D1F467A95005EAA1C /* Rebuild1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A668C1F467A95005EAA1C /* Rebuild1UITests.m */; };
+		3D4A66C11F479DF8005EAA1C /* BLEDevicesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A66C01F479DF8005EAA1C /* BLEDevicesTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3D4A66881F467A95005EAA1C /* Rebuild1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rebuild1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4A668C1F467A95005EAA1C /* Rebuild1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rebuild1UITests.m; sourceTree = "<group>"; };
 		3D4A668E1F467A95005EAA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4A66C01F479DF8005EAA1C /* BLEDevicesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevicesTVC.m; sourceTree = "<group>"; };
+		3D4A66C21F479E0F005EAA1C /* BLEDevicesTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEDevicesTVC.h; sourceTree = "<group>"; };
 		79950770FC1E9CD64C163BE5 /* Pods-Rebuild1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebuild1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rebuild1/Pods-Rebuild1.release.xcconfig"; sourceTree = "<group>"; };
 		C5F2616ADB21D8D15D36E8AE /* Pods-Rebuild1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebuild1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rebuild1/Pods-Rebuild1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +115,8 @@
 				3D4A666B1F467A95005EAA1C /* AppDelegate.m */,
 				3D4A666D1F467A95005EAA1C /* ViewController.h */,
 				3D4A666E1F467A95005EAA1C /* ViewController.m */,
+				3D4A66C21F479E0F005EAA1C /* BLEDevicesTVC.h */,
+				3D4A66C01F479DF8005EAA1C /* BLEDevicesTVC.m */,
 				3D4A66701F467A95005EAA1C /* Main.storyboard */,
 				3D4A66731F467A95005EAA1C /* Assets.xcassets */,
 				3D4A66751F467A95005EAA1C /* LaunchScreen.storyboard */,
@@ -234,7 +239,7 @@
 				TargetAttributes = {
 					3D4A66631F467A95005EAA1C = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FW8M2SJX5U;
+						DevelopmentTeam = 4996EKUR83;
 						ProvisioningStyle = Automatic;
 					};
 					3D4A667C1F467A95005EAA1C = {
@@ -352,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D4A666F1F467A95005EAA1C /* ViewController.m in Sources */,
+				3D4A66C11F479DF8005EAA1C /* BLEDevicesTVC.m in Sources */,
 				3D4A666C1F467A95005EAA1C /* AppDelegate.m in Sources */,
 				3D4A66691F467A95005EAA1C /* main.m in Sources */,
 			);
@@ -503,8 +509,9 @@
 			baseConfigurationReference = C5F2616ADB21D8D15D36E8AE /* Pods-Rebuild1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FW8M2SJX5U;
+				DEVELOPMENT_TEAM = 4996EKUR83;
 				INFOPLIST_FILE = Rebuild1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ASU.Rebuild1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,8 +524,9 @@
 			baseConfigurationReference = 79950770FC1E9CD64C163BE5 /* Pods-Rebuild1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FW8M2SJX5U;
+				DEVELOPMENT_TEAM = 4996EKUR83;
 				INFOPLIST_FILE = Rebuild1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ASU.Rebuild1;
 				PRODUCT_NAME = "$(TARGET_NAME)";

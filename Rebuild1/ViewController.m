@@ -90,11 +90,9 @@
 {
     NSString *roll= [NSString stringWithFormat:@"%1.1f",(delegate.rollAngle-delegate.rollOffset)];
     NSString *pitch=[NSString stringWithFormat:@"%1.1f",(delegate.pitchAngle-delegate.pitchOffset)];
-    //  NSString *yaw=[NSString stringWithFormat:@"%1.2f",delegate.yawAngle];
     
     NSString *axis1= @"Medial:    ";
     NSString *axis2= @"Sagittal:    ";
-    //  NSString *axis3= @"Yaw:    ";
     
     [self.rollLabel setText:[axis1 stringByAppendingString:roll]];
     [self.pitchLabel setText:[axis2 stringByAppendingString:pitch]];
