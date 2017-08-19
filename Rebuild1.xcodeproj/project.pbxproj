@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3997721BD27C1ACDB319586D /* libPods-Rebuild1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 373E9BE4D20E3620281505C9 /* libPods-Rebuild1.a */; };
+		3D466E561F47C058006F8B67 /* DeviceListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D466E551F47C058006F8B67 /* DeviceListTVC.m */; };
 		3D4A66691F467A95005EAA1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A66681F467A95005EAA1C /* main.m */; };
 		3D4A666C1F467A95005EAA1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A666B1F467A95005EAA1C /* AppDelegate.m */; };
 		3D4A666F1F467A95005EAA1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A666E1F467A95005EAA1C /* ViewController.m */; };
@@ -38,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		373E9BE4D20E3620281505C9 /* libPods-Rebuild1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rebuild1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D466E541F47C058006F8B67 /* DeviceListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListTVC.h; sourceTree = "<group>"; };
+		3D466E551F47C058006F8B67 /* DeviceListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListTVC.m; sourceTree = "<group>"; };
 		3D4A66641F467A95005EAA1C /* Rebuild1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rebuild1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4A66681F467A95005EAA1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D4A666A1F467A95005EAA1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				3D4A666B1F467A95005EAA1C /* AppDelegate.m */,
 				3D4A666D1F467A95005EAA1C /* ViewController.h */,
 				3D4A666E1F467A95005EAA1C /* ViewController.m */,
+				3D466E541F47C058006F8B67 /* DeviceListTVC.h */,
+				3D466E551F47C058006F8B67 /* DeviceListTVC.m */,
 				3D4A66C21F479E0F005EAA1C /* BLEDevicesTVC.h */,
 				3D4A66C01F479DF8005EAA1C /* BLEDevicesTVC.m */,
 				3D4A66701F467A95005EAA1C /* Main.storyboard */,
@@ -360,6 +365,7 @@
 				3D4A66C11F479DF8005EAA1C /* BLEDevicesTVC.m in Sources */,
 				3D4A666C1F467A95005EAA1C /* AppDelegate.m in Sources */,
 				3D4A66691F467A95005EAA1C /* main.m in Sources */,
+				3D466E561F47C058006F8B67 /* DeviceListTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

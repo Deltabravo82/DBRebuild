@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "DeviceListTVC.h"
+
+
 
 @interface AppDelegate ()
 
@@ -102,6 +105,7 @@
     
     [_beanlist addObject:bean];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateTableNotification" object:self];
+    NSLog(@"Posted UpdateTableNotification");
     
 }
 

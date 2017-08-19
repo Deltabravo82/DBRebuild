@@ -25,10 +25,15 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didConnect:) name:@"BeanConnected" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector( labelUpdate:)name:@"updateLabels" object:nil];
     
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTable:) name:@"UpdateTableNotification" object:nil];
     
 }
 
+-(void)updateTable:(NSNotification *)notification
+{
+    NSLog(@"VC received update table");
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

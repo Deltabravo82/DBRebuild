@@ -1,24 +1,21 @@
 //
-//  BLEDevicesTVC.m
+//  DeviceListTVC.m
 //  Rebuild1
 //
 //  Created by William Langenbach on 8/18/17.
 //  Copyright © 2017 William Langenbach. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "BLEDevicesTVC.h"
+#import "DeviceListTVC.h"
 
-@interface BLEDevicesTVC ()
+@interface DeviceListTVC ()
 {
     AppDelegate *delegate;
     
 }
 @end
 
-@implementation BLEDevicesTVC
-
-#pragma mark -TableUpdating
+@implementation DeviceListTVC
 
 -(void)viewDidLoad
 {
@@ -35,7 +32,7 @@
 
 -(void)updateTable:(NSNotification *)notification
 {
-    NSLog(@"received update table");
+    NSLog(@"TVC received update table");
     [self.tableView reloadData];
 }
 
@@ -70,6 +67,8 @@
     
 }
 #pragma mark - Table view data source
+
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
@@ -135,5 +134,14 @@
     
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
