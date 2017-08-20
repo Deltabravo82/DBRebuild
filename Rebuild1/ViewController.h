@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "CorePlot.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController //<CPTPlotDataSource>
 {
     AppDelegate *delegate;
     NSTimer *sessionTimer;
@@ -23,6 +24,7 @@
 @property (weak,nonatomic) IBOutlet UILabel *targetPitch;
 
 @property (weak,nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet CPTGraphHostingView *hostView;
 
 @property (nonatomic, strong) NSTimer *myTimer;
 

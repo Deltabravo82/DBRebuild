@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <CorePlot.h>
 
 
 @interface ViewController ()
@@ -18,7 +17,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    //CorePlot graph setup
+    
+    // Create a CPTGraph object and add to hostView
+    CPTGraph* graph = [[CPTXYGraph alloc] initWithFrame:_hostView.bounds];
+    _hostView.hostedGraph = graph;
+    
+    // Get the (default) plotspace from the graph so we can set its x/y ranges
+    CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *) graph.defaultPlotSpace;
+    
+    // Note that these CPTPlotRange are defined by START and LENGTH (not START and END) !!
+    [plotSpace setYRange: [CPTPlotRange plotRangeWithLocation:[NSNumber numberWithFloat:-8.0] length:[NSNumber numberWithFloat:-16.0]]];
+    [plotSpace setXRange: [CPTPlotRange plotRangeWithLocation:[NSNumber numberWithFloat:-8.0] length:[NSNumber numberWithFloat:-16.0]]];
+    //[plotSpace set]
+    // Create the plot (we do not define actual x/y values yet, these will be supplied by the datasource...)
+    CPTScatterPlot* plot = [[CPTScatterPlot alloc] initWithFrame:CGRectZero];
+    
+    // Let's keep it simple and let this class act as datasource (therefore we implemtn <CPTPlotDataSource>)
+    //plot.dataSource = self;
+    
+    // Finally, add the created plot to the default plot space of the CPTGraph object we created before
+    [graph addPlot:plot toPlotSpace:graph.defaultPlotSpace];
+    
+    //TODO: Add in graph formattting options
+    
     // Do any additional setup after loading the view, typically from a nib.
     delegate=(AppDelegate *) [[UIApplication sharedApplication] delegate];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disconnectViewUpdate:) name:@"disconnectViewUpdate" object:nil] ;
