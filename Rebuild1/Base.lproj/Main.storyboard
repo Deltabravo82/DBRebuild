@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih8-U9-gFq">
-                                <rect key="frame" x="538" y="745" width="231" height="70"/>
+                                <rect key="frame" x="537.5" y="745" width="231" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="231" id="ySD-D4-kTz"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUY-Nm-r1Y">
-                                <rect key="frame" x="537.5" y="645" width="231" height="70"/>
+                                <rect key="frame" x="538" y="645" width="231" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="231" id="AMQ-ZN-Mz7"/>
@@ -200,6 +200,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Search"/>
                             </button>
+                            <connections>
+                                <action selector="SearchButton:" destination="ZS7-4A-Fh6" id="aNq-o2-T2Y"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>

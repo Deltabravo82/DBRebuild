@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "CorePlot.h"
 
-@interface ViewController : UIViewController //<CPTPlotDataSource>
+@interface ViewController : UIViewController
 {
     AppDelegate *delegate;
     NSTimer *sessionTimer;
