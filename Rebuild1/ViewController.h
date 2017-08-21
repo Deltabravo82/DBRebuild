@@ -26,6 +26,7 @@
 @property (weak,nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet CPTGraphHostingView *hostView;
 
+@property (strong,nonatomic) UIView *toolmarker;
 @property (nonatomic, strong) NSTimer *myTimer;
 
 @end
