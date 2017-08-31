@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3997721BD27C1ACDB319586D /* libPods-Rebuild1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 373E9BE4D20E3620281505C9 /* libPods-Rebuild1.a */; };
+		3D295CD01F4AA290008FD026 /* Marker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D295CCD1F4AA290008FD026 /* Marker.m */; };
+		3D295CD11F4AA290008FD026 /* model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D295CCF1F4AA290008FD026 /* model.m */; };
 		3D466E561F47C058006F8B67 /* DeviceListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D466E551F47C058006F8B67 /* DeviceListTVC.m */; };
 		3D4A66691F467A95005EAA1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A66681F467A95005EAA1C /* main.m */; };
 		3D4A666C1F467A95005EAA1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A666B1F467A95005EAA1C /* AppDelegate.m */; };
@@ -38,6 +40,10 @@
 
 /* Begin PBXFileReference section */
 		373E9BE4D20E3620281505C9 /* libPods-Rebuild1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rebuild1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D295CCC1F4AA290008FD026 /* Marker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Marker.h; sourceTree = "<group>"; };
+		3D295CCD1F4AA290008FD026 /* Marker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Marker.m; sourceTree = "<group>"; };
+		3D295CCE1F4AA290008FD026 /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		3D295CCF1F4AA290008FD026 /* model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = model.m; sourceTree = "<group>"; };
 		3D466E541F47C058006F8B67 /* DeviceListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListTVC.h; sourceTree = "<group>"; };
 		3D466E551F47C058006F8B67 /* DeviceListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListTVC.m; sourceTree = "<group>"; };
 		3D4A66641F467A95005EAA1C /* Rebuild1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rebuild1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +117,10 @@
 		3D4A66661F467A95005EAA1C /* Rebuild1 */ = {
 			isa = PBXGroup;
 			children = (
+				3D295CCC1F4AA290008FD026 /* Marker.h */,
+				3D295CCD1F4AA290008FD026 /* Marker.m */,
+				3D295CCE1F4AA290008FD026 /* model.h */,
+				3D295CCF1F4AA290008FD026 /* model.m */,
 				3D4A666A1F467A95005EAA1C /* AppDelegate.h */,
 				3D4A666B1F467A95005EAA1C /* AppDelegate.m */,
 				3D4A666D1F467A95005EAA1C /* ViewController.h */,
@@ -359,7 +369,9 @@
 				3D4A666F1F467A95005EAA1C /* ViewController.m in Sources */,
 				3D4A666C1F467A95005EAA1C /* AppDelegate.m in Sources */,
 				3D4A66691F467A95005EAA1C /* main.m in Sources */,
+				3D295CD11F4AA290008FD026 /* model.m in Sources */,
 				3D466E561F47C058006F8B67 /* DeviceListTVC.m in Sources */,
+				3D295CD01F4AA290008FD026 /* Marker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,9 +37,13 @@
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    //[_beanManager disconnectBean:_bean error:nil];
+    
 }
 
 
@@ -74,19 +78,25 @@
     if(bank==1)
     {
         
-        _rollAngle = *(float *)&buffer[0];  // _rollAngle = fBuffer[0];
-        _pitchAngle= *(float *)&buffer[4];
-        _yawAngle  = *(float *)&buffer[8];
+//        _rollAngle = *(float *)&buffer[0];  // _rollAngle = fBuffer[0];
+//        _pitchAngle= *(float *)&buffer[4];
+//        _yawAngle  = *(float *)&buffer[8];
+        NSNumber *ang1=[NSNumber numberWithFloat:*(float *)&buffer[0]];
+        NSNumber *ang2=[NSNumber numberWithFloat:*(float *)&buffer[4]];
+        NSNumber *ang3=[NSNumber numberWithFloat:*(float *)&buffer[8]];
+        
+        
         NSLog(@" Received Roll is %g ",_rollAngle);
         NSLog(@" Received Pitch is %g ",_pitchAngle);
         NSLog(@" Received Yaw is %g ",_yawAngle);
-    }
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"updateLabels" object:self];
+        NSMutableArray *values= [NSMutableArray arrayWithObjects:ang1, ang2, ang3, nil];
+    
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"updateAngles" object:values];
     //[ labelUpdate:bank withValue:x];
     
     float number = *(float *)[data bytes];
     NSLog(@"Bean Scratch %ld is: %f", (long)bank, number);
-
+    }
 }
 
 #pragma mark Bean Manager delegate methods
@@ -126,6 +136,7 @@
 -(void)beanManager:(PTDBeanManager *)beanManager didDisconnectBean:(PTDBean *)bean error:(NSError *)error
 {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"disconnectViewUpdate" object:self];
+    
 }
 
 -(void)beanManagerDidUpdateState:(PTDBeanManager *)beanManager
