@@ -35,7 +35,7 @@
     _hostView.hostedGraph = graph;
     CPTTheme *newTheme= [CPTTheme themeNamed:kCPTStocksTheme];
     [graph applyTheme:newTheme];
-    
+    //[_hostView setClipsToBounds:YES];
     
     // Get the (default) plotspace from the graph so we can set its x/y ranges
     CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *) graph.defaultPlotSpace;
@@ -46,8 +46,8 @@
     CPTXYAxisSet *axisSet = (CPTXYAxisSet *)[graph axisSet];
     
     // Set Range
-    [plotSpace setYRange: [CPTPlotRange plotRangeWithLocation:[NSNumber numberWithFloat:-90.0*_aspectRatio] length:[NSNumber numberWithFloat:180.0*_aspectRatio]]];
-    [plotSpace setXRange: [CPTPlotRange plotRangeWithLocation:[NSNumber numberWithFloat:-90.0] length:[NSNumber numberWithFloat:180.0]]];
+    [plotSpace setYRange: [CPTPlotRange plotRangeWithLocation:[NSNumber numberWithFloat:-50.0*_aspectRatio] length:[NSNumber numberWithFloat:100.0*_aspectRatio]]];
+    [plotSpace setXRange: [CPTPlotRange plotRangeWithLocation:[NSNumber numberWithFloat:-50.0] length:[NSNumber numberWithFloat:100.0]]];
     
 
     //Formatting
@@ -93,14 +93,14 @@
     
     _dataModel=[[model alloc] init];
     
-    Marker *newTarget= [[Marker alloc] initWithFrame:CGRectMake(_hostView.center.x-100, _hostView.center.y-75, 200, 150)];
+    Marker *newTarget= [[Marker alloc] initWithFrame:CGRectMake(_hostView.center.x-100, _hostView.center.y-75, 50, 40)];
     [newTarget setFillColor:[UIColor colorWithRed:0 green:1 blue:0 alpha:0.5]];
     [_hostView addSubview:newTarget];
     _targetMarker=newTarget;
     [_targetMarker setHidden:YES];
     
     _toolMarker= [[Marker alloc] initWithFrame:CGRectMake(_hostView.center.x, _hostView.center.y, 25, 25)];
-    [_toolMarker setFillColor:[UIColor blackColor]];
+    [_toolMarker setFillColor:[UIColor yellowColor]];
     [_hostView addSubview:_toolMarker];
     
     // Do any additional setup after loading the view, typically from a nib.
@@ -148,6 +148,10 @@
     //TODO: update and change to directly change model
     [self.targetRoll setText:roll];
     [self.targetPitch setText:pitch];
+    [self.targetMarker setHidden:!_targetMarker.hidden];
+    
+    [_targetMarker setCenter: _toolMarker.center];
+    
     
 }
 -(void) timerReadScratch:(NSTimer *)timer

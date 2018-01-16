@@ -33,7 +33,7 @@
     _sagittalAngle=0;
     _sagittalOffset=0;
     _sagittalTargetAngle=0;
-    _degreeRange=180;
+    _degreeRange=100;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setAngles:) name:@"updateAngles" object:nil];
     
     
@@ -73,7 +73,7 @@
         //Right now arbitrarily setting the width of angle to display after being set. In the future it should likely be handled by the ViewController and scale based on the aspect ratio of the graph View
     if(x==0.0)
     {
-        [self setDegreeRange:180];
+        [self setDegreeRange:120];
     }
     else [self setDegreeRange:20];
     [[NSNotificationCenter defaultCenter]postNotificationName:@"TargetChanged" object: self];

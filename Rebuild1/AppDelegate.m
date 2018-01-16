@@ -23,7 +23,9 @@
     //Init stuff
     _beanManager= [[PTDBeanManager alloc] initWithDelegate:self];
     _beanlist = [NSMutableArray array];
-    
+
+    [_beanManager startScanningForBeans_error:nil];
+
     
     
     
@@ -141,10 +143,19 @@
 
 -(void)beanManagerDidUpdateState:(PTDBeanManager *)beanManager
 {
+    
     if(self.beanManager.state == BeanManagerState_PoweredOn)
     {
         NSLog(@"Can use BT, powered on, proceed");
         [self.beanManager startScanningForBeans_error:nil];
+    }
+    else if(self.beanManager.state == BeanManagerState_Unknown)
+    {
+        NSLog(@"State Unknown");
+    }
+    else if (self.beanManager.state == BeanManagerState_Unsupported)
+    {
+        NSLog(@"Bluetooth state unsupported");
     }
     else
     {
